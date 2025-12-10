@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel With Darpan - Contact</title>
+  <meta name="description" content="Contact Travel With Darpan for travel inquiries and collaborations.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-31H0M6PMT1');
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;scroll-behavior:smooth;}
+    a{text-decoration:none;color:inherit;}
+    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;backdrop-filter:blur(5px);}
+    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
+    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover, nav a.active{color:#00ffff;}
+
+    .hero{height:50vh;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
+    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+    .hero-content{position:relative;color:#fff;z-index:1;}
+    .hero h1{font-size:2.5rem;margin-bottom:10px;}
+    .hero p{font-size:1.1rem;}
+
+    section{padding:100px 20px 50px;max-width:700px;margin:0 auto;}
+    h2{font-size:2rem;color:#00aaff;margin-bottom:25px;text-align:center;}
+    p{margin-bottom:15px;color:#ccc;}
+
+    form{display:flex;flex-direction:column;}
+    input, textarea{padding:12px 15px;margin-bottom:15px;border:none;border-radius:8px;font-size:1rem;}
+    input, textarea{width:100%;}
+    textarea{resize:none;height:150px;}
+    button{background:#00aaff;color:#000;font-weight:bold;padding:12px;cursor:pointer;border:none;border-radius:8px;transition:0.3s;}
+    button:hover{background:#00ffff;}
+
+    footer{text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
+
+    #backToTop{position:fixed;bottom:30px;right:30px;background:#00aaff;padding:12px 18px;border-radius:50%;display:none;cursor:pointer;color:#000;font-weight:bold;transition:0.3s;}
+    #backToTop:hover{background:#00ffff;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌍 Travel With Darpan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out for travel inquiries or collaborations.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Get In Touch</h2>
+  <form action="mailto:wanderworld@example.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>Email: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else { btn.style.display = 'none'; }
+  };
+</script>
+
+</body>
+</html>
