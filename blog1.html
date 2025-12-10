@@ -3,160 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himachal – Mountains & Magic</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      line-height: 1.7;
-    }
-    header {
-      background: #000;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #222;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    header a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-    header a:hover {
-      color: #00aaff;
-    }
-    .hero {
-      height: 60vh;
-      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      color: #fff;
-    }
-    .hero h1 {
-      font-size: 48px;
-      text-shadow: 0 0 12px rgba(0,0,0,0.7);
-    }
+  <title>Travel With Darpan - Himachal</title>
+  <meta name="description" content="Travel With Darpan - Himachal Mountains travel blog. Explore valleys, peaks, and local culture.">
 
-    .content {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      background: #111;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    .content img {
-      width: 100%;
-      border-radius: 12px;
-      margin: 25px 0;
-    }
-
-    h2 {
-      color: #00aaff;
-      margin-top: 40px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #000;
-      color: #777;
-      margin-top: 50px;
-      border-top: 1px solid #222;
-    }
-  </style>
   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', 'G-31H0M6PMT1');
-</script>
-<!-- End Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-31H0M6PMT1');
+  </script>
 
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;scroll-behavior:smooth;}
+    a{text-decoration:none;color:inherit;}
+    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;backdrop-filter:blur(5px);}
+    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
+    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover, nav a.active{color:#00ffff;}
+
+    .hero{height:60vh;background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
+    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+    .hero-content{position:relative;color:#fff;z-index:1;}
+    .hero h1{font-size:3rem;margin-bottom:15px;}
+    .hero p{font-size:1.2rem;}
+
+    section{padding:100px 20px 50px;max-width:1000px;margin:0 auto;}
+    h2{font-size:2rem;color:#00aaff;margin-bottom:25px;text-align:center;}
+    p{margin-bottom:15px;color:#ccc;}
+
+    .blog-img{width:100%;border-radius:12px;margin-bottom:20px;}
+    footer{text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
+
+    #backToTop{position:fixed;bottom:30px;right:30px;background:#00aaff;padding:12px 18px;border-radius:50%;display:none;cursor:pointer;color:#000;font-weight:bold;transition:0.3s;}
+    #backToTop:hover{background:#00ffff;}
+
+    @media(max-width:768px){.hero h1{font-size:2.2rem;}}
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">🌍 <strong>Travel With Darpan</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">🌍 Travel With Darpan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html" class="active">Blogs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
+<section class="hero">
+  <div class="hero-content">
     <h1>Himachal – Mountains & Magic</h1>
-    <p>Snowy peaks, fresh air, and peace.</p>
-  </section>
-
-  <div class="content">
-    <h2>✨ Introduction</h2>
-    <p>
-      Himachal Pradesh is where nature whispers peace and the mountains hug the sky. Whether you're exploring charming towns like Manali and Shimla or trekking through untouched valleys, the region offers pure magic.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Himachal Landscape">
-
-    <h2>🏔 Best Places to Visit</h2>
-
-    <h3>1. Manali</h3>
-    <p>
-      A perfect mix of adventure and relaxation — snow-capped peaks, the Beas River, cafes, and a vibrant traveler vibe.
-    </p>
-
-    <h3>2. Shimla</h3>
-    <p>
-      The Queen of Hills. Colonial charm, Mall Road, toy trains, and stunning sunsets.
-    </p>
-
-    <h3>3. Spiti Valley</h3>
-    <p>
-      A cold desert where the roads test you but the views reward you. Clear skies, monasteries, and surreal landscapes.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Spiti Valley">
-
-    <h2>🌄 Things To Do</h2>
-    <ul>
-      <li>Trekking in Parvati Valley</li>
-      <li>River rafting in Kullu</li>
-      <li>Stargazing in Spiti</li>
-      <li>Café hopping in Old Manali</li>
-      <li>Exploring ancient monasteries</li>
-    </ul>
-
-    <h2>🍲 Food to Try</h2>
-    <p>
-      Local Himachali cuisine like *Siddu*, *Thukpa*, and *Madra* gives a cozy, home-like feeling. Don’t miss street momos with spicy chutney!
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Himachal Food">
-
-    <h2>📌 Final Thoughts</h2>
-    <p>
-      Himachal is not just a destination — it’s a feeling. A place where time slows down and peace takes over. Whether you're a solo traveler, a couple, or a family, the mountains promise unforgettable memories.
-    </p>
+    <p>Peaceful valleys, snow-capped peaks, and unforgettable journeys</p>
   </div>
+</section>
 
-  <footer>
-    © 2025 Travel With Darpan. All Rights Reserved.
-  </footer>
+<section>
+  <h2>Introduction</h2>
+  <p>Himachal Pradesh is a haven for mountain lovers, with serene landscapes, lush valleys, and adventure-filled trails. Explore the charm of hill stations and experience local culture and cuisine.</p>
+
+  <h2>Must-Visit Places</h2>
+  <p>Shimla, Manali, Spiti Valley, and Dharamshala are some of the top destinations offering breathtaking views, trekking experiences, and cozy stays.</p>
+
+  <h2>Local Cuisine & Culture</h2>
+  <p>Enjoy traditional Himachali dishes like Siddu, Chha Gosht, and Babru. Interact with locals to learn about their festivals, handicrafts, and mountain traditions.</p>
+
+  <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Himachal Mountains View" class="blog-img">
+</section>
+
+<footer>
+  <p>Contact us at: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else { btn.style.display = 'none'; }
+  };
+</script>
 
 </body>
 </html>
