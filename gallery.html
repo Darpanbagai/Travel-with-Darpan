@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel With Darpan - Gallery</title>
+  <meta name="description" content="Travel With Darpan - Explore scenic travel destinations through our gallery.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-31H0M6PMT1');
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;scroll-behavior:smooth;}
+    a{text-decoration:none;color:inherit;}
+    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;backdrop-filter:blur(5px);}
+    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
+    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover, nav a.active{color:#00ffff;}
+
+    .hero{height:50vh;background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
+    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+    .hero-content{position:relative;color:#fff;z-index:1;}
+    .hero h1{font-size:2.5rem;margin-bottom:10px;}
+    .hero p{font-size:1.1rem;}
+
+    section{padding:100px 20px 50px;max-width:1100px;margin:0 auto;}
+    h2{font-size:2rem;color:#00aaff;margin-bottom:25px;text-align:center;}
+
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .gallery-grid img{width:100%;border-radius:12px;cursor:pointer;transition:transform 0.3s, box-shadow 0.3s;}
+    .gallery-grid img:hover{transform:scale(1.05);box-shadow:0 10px 20px rgba(0,0,0,0.5);}
+
+    footer{text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
+
+    #backToTop{position:fixed;bottom:30px;right:30px;background:#00aaff;padding:12px 18px;border-radius:50%;display:none;cursor:pointer;color:#000;font-weight:bold;transition:0.3s;}
+    #backToTop:hover{background:#00ffff;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌍 Travel With Darpan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Travel Gallery</h1>
+    <p>Scenic views from Himachal, Andaman & Bangkok</p>
+  </div>
+</section>
+
+<section>
+  <h2>Explore Our Destinations</h2>
+  <div class="gallery-grid">
+    <!-- Himachal -->
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Himachal Mountains">
+    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Himachal Valley">
+
+    <!-- Andaman -->
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Andaman Beach">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Andaman Sunset">
+
+    <!-- Bangkok -->
+    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Bangkok City">
+    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Bangkok Street Market">
+  </div>
+</section>
+
+<footer>
+  <p>Contact us at: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else { btn.style.display = 'none'; }
+  };
+</script>
+
+</body>
+</html>
