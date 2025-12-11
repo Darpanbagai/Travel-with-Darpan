@@ -3,89 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andaman – Turquoise Paradise</title>
-  <style>
-    body {margin:0;font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;}
-    header {background:#000;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;position:sticky;top:0;z-index:10;}
-    header a {color:#fff;text-decoration:none;margin:0 15px;font-weight:500;}
-    header a:hover {color:#00aaff;}
-    .hero {height:60vh;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;color:#fff;}
-    .hero h1 {font-size:48px;text-shadow:0 0 12px rgba(0,0,0,0.7);}
-    .content {max-width:900px;margin:50px auto;padding:20px;background:#111;border-radius:12px;box-shadow:0 0 20px rgba(0,0,0,0.5);}
-    .content img {width:100%;border-radius:12px;margin:25px 0;}
-    h2 {color:#00aaff;margin-top:40px;}
-    footer {text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
-  </style>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', 'G-31H0M6PMT1');
-</script>
-<!-- End Google Analytics -->
+  <title>Travel With Darpan - Andaman</title>
+  <meta name="description" content="Travel With Darpan - Andaman travel blog. Explore beaches, islands, and turquoise waters.">
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-31H0M6PMT1');
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;scroll-behavior:smooth;}
+    a{text-decoration:none;color:inherit;}
+    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;backdrop-filter:blur(5px);}
+    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
+    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover, nav a.active{color:#00ffff;}
+
+    .hero{height:60vh;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
+    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+    .hero-content{position:relative;color:#fff;z-index:1;}
+    .hero h1{font-size:3rem;margin-bottom:15px;}
+    .hero p{font-size:1.2rem;}
+
+    section{padding:100px 20px 50px;max-width:1000px;margin:0 auto;}
+    h2{font-size:2rem;color:#00aaff;margin-bottom:25px;text-align:center;}
+    p{margin-bottom:15px;color:#ccc;}
+
+    .blog-img{width:100%;border-radius:12px;margin-bottom:20px;}
+    footer{text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
+
+    #backToTop{position:fixed;bottom:30px;right:30px;background:#00aaff;padding:12px 18px;border-radius:50%;display:none;cursor:pointer;color:#000;font-weight:bold;transition:0.3s;}
+    #backToTop:hover{background:#00ffff;}
+
+    @media(max-width:768px){.hero h1{font-size:2.2rem;}}
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">🌍 <strong>Travel With Darpan</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">🌍 Travel With Darpan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html" class="active">Blogs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
+<section class="hero">
+  <div class="hero-content">
     <h1>Andaman – Turquoise Paradise</h1>
-    <p>Pristine beaches, crystal waters, and serene sunsets.</p>
-  </section>
-
-  <div class="content">
-    <h2>✨ Introduction</h2>
-    <p>
-      The Andaman Islands are a tropical paradise with white sandy beaches, turquoise waters, and lush greenery. Perfect for relaxation and water adventures alike.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Andaman Beach">
-
-    <h2>🏖 Best Places to Visit</h2>
-
-    <h3>1. Radhanagar Beach</h3>
-    <p>One of the most beautiful beaches in Asia with stunning sunsets and clear waters.</p>
-
-    <h3>2. Havelock Island</h3>
-    <p>Famous for snorkeling, scuba diving, and luxury beach resorts.</p>
-
-    <h3>3. Neil Island</h3>
-    <p>Small and peaceful island perfect for a romantic getaway or solo retreat.</p>
-
-    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Havelock Island">
-
-    <h2>🌊 Activities</h2>
-    <ul>
-      <li>Snorkeling and scuba diving in coral reefs</li>
-      <li>Island hopping tours</li>
-      <li>Kayaking and jet-skiing</li>
-      <li>Beach camping under the stars</li>
-    </ul>
-
-    <h2>🍲 Local Cuisine</h2>
-    <p>Seafood lovers rejoice! Try fresh fish curry, prawn masala, and coconut-infused dishes for an authentic Andaman taste.</p>
-
-    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526" alt="Andaman Food">
-
-    <h2>📌 Final Thoughts</h2>
-    <p>Andaman is a perfect escape from city life. Whether you want adventure, romance, or tranquility, these islands offer everything for an unforgettable holiday.</p>
+    <p>Beaches, islands, and unforgettable sunsets</p>
   </div>
+</section>
 
-  <footer>
-    © 2025 Travel With Darpan. All Rights Reserved.
-  </footer>
+<section>
+  <h2>Introduction</h2>
+  <p>The Andaman Islands are a tropical paradise with crystal-clear waters, pristine beaches, and a peaceful atmosphere perfect for relaxation and adventure.</p>
+
+  <h2>Top Destinations</h2>
+  <p>Radhanagar Beach, Havelock Island, Neil Island, and Cellular Jail are must-visit locations offering beautiful landscapes and cultural experiences.</p>
+
+  <h2>Activities & Experiences</h2>
+  <p>Snorkeling, scuba diving, island hopping, and exploring coral reefs make Andaman a dream destination for travelers seeking both adventure and serenity.</p>
+
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Andaman Beach Sunset" class="blog-img">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Andaman Scenic Beach" class="blog-img">
+</section>
+
+<footer>
+  <p>Contact us at: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else { btn.style.display = 'none'; }
+  };
+</script>
 
 </body>
 </html>
