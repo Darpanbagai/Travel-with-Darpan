@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Street Food Tour in Bangkok | Travel with Darpan</title>
+  <title>Travel With Darpan - Bangkok Street Food</title>
+  <meta name="description" content="Travel With Darpan - Bangkok Street Food Tour. Experience flavours, culture, and night market vibes.">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
@@ -15,53 +16,122 @@
   </script>
 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
-    header { background: #ff9800; color: white; padding: 20px; text-align: center; }
-    .container { max-width: 900px; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; }
-    h1 { margin-top: 0; }
-    img { width: 100%; border-radius: 10px; margin: 20px 0; }
-    p { line-height: 1.7; font-size: 1.05rem; color: #444; }
-    a.back { display: inline-block; margin-top: 20px; padding: 10px 15px; background: #ff9800; color: white; text-decoration: none; border-radius: 6px; }
-    a.back:hover { background: #e68900; }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.7;scroll-behavior:smooth;}
+    a{text-decoration:none;color:inherit;}
+    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;backdrop-filter:blur(5px);}
+    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
+    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover, nav a.active{color:#00ffff;}
+
+    .hero{
+      height:60vh;
+      background:url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2') center/cover no-repeat;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+    }
+    .hero::before{
+      content:'';
+      position:absolute;top:0;left:0;width:100%;height:100%;
+      background:rgba(0,0,0,0.5);
+    }
+    .hero-content{position:relative;color:#fff;z-index:1;}
+    .hero h1{font-size:3rem;margin-bottom:15px;}
+    .hero p{font-size:1.2rem;}
+
+    section{padding:100px 20px 50px;max-width:1000px;margin:0 auto;}
+    h2{font-size:2rem;color:#00aaff;margin-bottom:25px;text-align:center;}
+    p{margin-bottom:15px;color:#ccc;}
+
+    .blog-img{width:100%;border-radius:12px;margin-bottom:20px;}
+
+    footer{text-align:center;padding:30px;background:#000;color:#777;margin-top:50px;border-top:1px solid #222;}
+
+    #backToTop{
+      position:fixed;
+      bottom:30px;
+      right:30px;
+      background:#00aaff;
+      padding:12px 18px;
+      border-radius:50%;
+      display:none;
+      cursor:pointer;
+      color:#000;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    #backToTop:hover{background:#00ffff;}
+
+    @media(max-width:768px){
+      .hero h1{font-size:2.2rem;}
+    }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Street Food Tour in Bangkok</h1>
-  <p>A flavour-packed journey through the city's vibrant food streets</p>
+  <div class="logo">🌍 Travel With Darpan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html" class="active">Blogs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<div class="container">
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bangkok Street Food Tour</h1>
+    <p>Flavours, culture & vibrant night markets</p>
+  </div>
+</section>
 
-  <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80" alt="Bangkok Street Food">
+<section>
+  <h2>Introduction</h2>
+  <p>Bangkok is a paradise for food lovers. Its street food culture is famous across the world, offering spicy, sweet, smoky, and savoury dishes that burst with flavour. From sizzling noodles to juicy grilled meats and iconic desserts, Bangkok’s streets never fail to impress.</p>
 
-  <p>
-    Bangkok is a paradise for food lovers. From spicy noodles to crispy pork and mouth-watering desserts, the streets are full of flavours that you simply can’t resist. Every corner you turn has a food cart serving something unique, fresh, and absolutely delicious.
-  </p>
+  <h2>Must-Visit Places</h2>
+  <p><strong>Yaowarat (Chinatown)</strong> is the heart of street food, glowing with neon lights and bustling with food stalls. Whether it’s dim sum, seafood, or mango sticky rice — it's a must-visit.</p>
+  <p><strong>Victory Monument</strong> is famous for its boat noodles — small bowls packed with rich broth, tender meat, and bold spices.</p>
 
-  <p>
-    One of the most iconic places to explore is Chinatown (Yaowarat Road), where the streets come alive with sizzling woks, bright neon lights, and long queues of both locals and tourists waiting for their favourite dishes. Pad Thai, mango sticky rice, spicy papaya salad — everything tastes better when it's eaten right there on the street.
-  </p>
+  <h2>Popular Thai Street Foods</h2>
+  <p>✔️ Pad Thai – Bangkok’s iconic stir-fried noodles<br>
+     ✔️ Som Tam – Spicy raw papaya salad<br>
+     ✔️ Mango Sticky Rice – Sweet, fruity & refreshing<br>
+     ✔️ Moo Ping – Grilled pork skewers</p>
 
-  <p>
-    A must-try experience is the famous Boat Noodles at Victory Monument. The bowls may be small, but the flavours are powerful — rich broth, tender meat, and the right balance of spices.
-  </p>
+  <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713" alt="Bangkok Street Food Market" class="blog-img">
 
-  <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&q=80" alt="Bangkok Food Market">
+  <p>Bangkok’s desserts are equally irresistible — coconut ice cream, roti with condensed milk, and fresh tropical fruit smoothies add the perfect sweet touch to your food adventure.</p>
 
-  <p>
-    If you love desserts, Bangkok will not disappoint. Coconut ice cream, roti with condensed milk, fresh fruit smoothies — there's something sweet for everyone.
-  </p>
+  <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c" alt="Bangkok Food Night Market" class="blog-img">
 
-  <p>
-    A street food tour in Bangkok is more than just eating — it's an experience full of culture, energy, and unforgettable tastes. It's truly a must-visit for every traveller.
-  </p>
+  <p>Exploring Bangkok’s street food scene is not just about eating — it's an experience full of energy, culture, and unforgettable tastes.</p>
 
-  <a class="back" href="blogs.html">← Back to Blogs</a>
+</section>
 
-</div>
+<footer>
+  <p>Contact us at: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  };
+</script>
 
 </body>
 </html>
+
